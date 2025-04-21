@@ -23,7 +23,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-light {
+  :root {
     --accent-color: #353430;
     --shadow-color: #ff8dcb;
     --heading-color: #ffc2e6;
