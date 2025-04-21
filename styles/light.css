@@ -1,28 +1,40 @@
-.page.theme_light {
-  --cover-image: url(../images/cover-image-light.png);
-  --accent-clr: #ff8dcb;
-  --accent-clr-with-background: #353430;
-  --accent-heading-clr: #ffc2e6;
-  --text-clr: #353430;
-  --button-hover-clr: #32312d66;
-  --decorative-bracket-clr: #353430;
-  --menu-clr: #353430;
-  --rec-decoration-clr: transparent;
-  --heading-clr: #353430;
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+:root.theme-light {
+    --accent-color: #353430;
+    --shadow-color: #FF8DCB;
+    --heading-color: #FFC2E6;
+    --heading-text: #353430;
+    --decor-color: #353430;
+    --text-bg: #FF8DCB;
+    --text-color: #353430;
+    --bg-image: url(../images/cover-image-light.png);
+    --bg-color: #FFF1F7;
+    --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+.theme-light .decorated-record-icon {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
-
-  :root {
-    --cover-image: url(../images/cover-image-light.png);
-    --accent-clr: #ff8dcb;
-    --accent-clr-with-background: #353430;
-    --accent-heading-clr: #ffc2e6;
-    --text-clr: #353430;
-    --button-hover-clr: #32312d66;
-    --decorative-bracket-clr: #353430;
-    --menu-clr: #353430;
-    --rec-decoration-clr: transparent;
-    --heading-clr: #353430;
-  }
+  :root.theme-light {
+    --accent-color: #353430;
+    --shadow-color: #ff8dcb;
+    --heading-color: #ffc2e6;
+    --heading-text: #353430;
+    --decor-color: #353430;
+    --text-bg: #ff8dcb;
+    --text-color: #353430;
+    --bg-image: url(../images/cover-image-light.png);
+    --bg-color: #fff1f7;
+    --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --main-font-family: 'IBM Plex Mono';
+}
 }
