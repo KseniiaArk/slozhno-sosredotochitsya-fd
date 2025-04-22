@@ -311,14 +311,14 @@
     gap: 80px;
   }
 
-  .content__section-common-rule {    
+  .content__section-point-title {
+    max-inline-size: 236px;
+  }
+
+  .content__section-common-rule {
     display: grid;
     column-gap: 20px;
     grid-template-columns: 236px 1fr;
-  }
-
-  .content__section-point-title {
-    max-inline-size: 236px;
   }
 
   .content__section-gallery-title {
